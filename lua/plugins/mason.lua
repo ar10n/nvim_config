@@ -10,11 +10,8 @@ return {
 		config = function()
 			require("mason-lspconfig").setup({
 				ensure_installed = {
-					"bsl_ls",
 					"lua_ls",
-					"gopls",
 					"ts_ls",
-					"prismals",
 				},
 			})
 		end,

@@ -5,10 +5,7 @@ return {
 		config = function()
 			local lspconfig = require("lspconfig")
 			lspconfig.lua_ls.setup({})
-			lspconfig.bsl_ls.setup({})
-			lspconfig.gopls.setup({})
 			lspconfig.ts_ls.setup({})
-			lspconfig.prismals.setup({})
 			vim.api.nvim_create_autocmd("LspAttach", {
 				group = vim.api.nvim_create_augroup("UserLspConfig", {}),
 				callback = function(ev)
